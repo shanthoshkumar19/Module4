@@ -31,22 +31,22 @@ To write a Python program that sorts a dictionary's:
 
 ## 🧪Program
 ```
-data = {
-    'banana': 'yellow',
-    'apple': 'red',
-    'cherry': 'pink',
-    'grape': 'purple'
-}
-
-# Sort by keys
-sorted_by_keys = dict(sorted(data.items()))
-
-# Sort by values
-sorted_by_values = dict(sorted(data.items(), key=lambda item: item[1]))
-
-print("Original Dictionary:", data)
-print("Sorted by Keys:", sorted_by_keys)
-print("Sorted by Values:", sorted_by_values)
+def dictionairy(): 
+# Declaring hash function      
+key_value ={}    
+# Initializing the value 
+key_value[2] = 56       
+key_value[1] = 2 
+key_value[5] = 12 
+key_value[4] = 24 
+key_value[6] = 18      
+key_value[3] = 323 
+print ("Keys and Values sorted", 
+"in alphabetical order by the value") 
+# Note that it will sort in lexicographical order 
+# For mathematical way, change it to float 
+print(sorted(key_value.items(), key = 
+lambda kv:(kv[1], kv[0])))
 ```
 
 ## Sample Output
